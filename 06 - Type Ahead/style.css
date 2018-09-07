@@ -1,16 +1,29 @@
     html {
       box-sizing: border-box;
-      background:#ffc600;
-      font-family:'helvetica neue';
-      font-size: 20px;
+      background-image: url(img/usa4.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      font-family: 'Open Sans Condensed', sans-serif;
+      font-size: 18px;
       font-weight: 200;
     }
+
     *, *:before, *:after {
       box-sizing: inherit;
     }
+
     input {
       width: 100%;
       padding:20px;
+      color: #8c769f;
+      font-family: 'Open Sans Condensed', sans-serif;
+    }
+
+    ::placeholder{
+      font-family: 'Open Sans Condensed', sans-serif;
+      color: #e2baba;
+      opacity: 1;
     }
 
     .search-form {
@@ -22,7 +35,7 @@
       margin: 0;
       text-align: center;
       outline:0;
-      border: 10px solid #F7F7F7;
+      border: 3px solid #b40036;
       width: 120%;
       left: -10%;
       position: relative;
@@ -31,15 +44,15 @@
       border-radius: 5px;
       font-size: 40px;
       box-shadow: 0 0 5px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.19);
+      background-color: transparent;
     }
-
-
+    
     .suggestions {
-      margin: 0;
+      margin: 1;
       padding: 0;
       position: relative;
-      /*perspective:20px;*/
     }
+
     .suggestions li {
       background:white;
       list-style: none;
@@ -67,5 +80,5 @@
     }
 
     .hl {
-      background:#ffc600;
+      background:#fcbacb;
     }
